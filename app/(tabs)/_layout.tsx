@@ -42,6 +42,15 @@ export default function TabsLayout() {
             <Ionicons name="time-outline" color={color} size={size} />
           ),
         }}
+        />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-outline" color={color} size={size} />
+          ),
+        }}
       />
       <Tabs.Screen
         name="teacher"
@@ -49,15 +58,6 @@ export default function TabsLayout() {
           title: 'Teacher',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="school-outline" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: 'Profile',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" color={color} size={size} />
           ),
         }}
       />
